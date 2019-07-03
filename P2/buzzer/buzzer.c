@@ -60,6 +60,7 @@ static struct gpio routers[]={
 
 struct pwm_device* buzzer_open()
 {
+	gpio_request_array(routers, ARRAY_SIZE(routers));
 	return pwm_request(5,"eng10032-buzzer");
 }
 
