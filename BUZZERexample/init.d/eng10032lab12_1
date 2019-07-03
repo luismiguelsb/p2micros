@@ -12,17 +12,17 @@
 
 case "$1" in
     start)
-    	modprobe led
+    	modprobe eng10032-buzzer
     	;;
     restart|force-reload)
-    	rmmod led
-	modprobe led
+    	rmmod eng10032-buzzer
+	modprobe eng10032-buzzer
 	;;
     stop)
-    	rmmod led
+    	rmmod eng10032-buzzer
 	;;
     status)
-    	lsmod | grep led
+    	lsmod | grep eng10032-buzzer
 	;;
     *)
 	echo -n "Usage: $0 " 

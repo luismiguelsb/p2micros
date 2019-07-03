@@ -1,10 +1,10 @@
 MODULEDIR=/lib/modules/`uname -r`/char
 
-TARGET=led.ko
+TARGET=buzzer.ko
 SRCS=$(TARGET:.ko=.c)
 
 #KERNEL_SOURCE=/lib/modules/`uname -r`/build
-KERNEL_SOURCE=~/src/lab12/linux-3.8.7
+KERNEL_SOURCE=~/src/lab11/linux-3.8.7
 EXTRA_CFLAGS+=-D__KERNEL__ -DMODULE
 
 obj-m+=$(TARGET:.ko=.o)
