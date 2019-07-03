@@ -25,3 +25,5 @@ clean:
 
 distclean: clean
 	rm -f $(TARGET)
+
+#//DUPLA: Laurien Santin e Luis Miguel Batista
