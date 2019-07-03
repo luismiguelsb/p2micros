@@ -19,7 +19,7 @@ MODULE_DESCRIPTION("buzzer Driver");
 MODULE_SUPPORTED_DEVICE("buzzer");
 MODULE_LICENSE("GPL");
 
-module_param(major,int,63);
+module_param(major,int,0);
 MODULE_PARM_DESC(major,"major number; default is kernel allocated.");
 
 static ssize_t buzzer_write(struct pwm_device *file,const char *buf,

@@ -1,6 +1,6 @@
 MODULEDIR=/lib/modules/`uname -r`/char
 
-TARGET=eng10032-buzzer.ko
+TARGET=buzzer.ko
 SRCS=$(TARGET:.ko=.c)
 
 #KERNEL_SOURCE=/lib/modules/`uname -r`/build
