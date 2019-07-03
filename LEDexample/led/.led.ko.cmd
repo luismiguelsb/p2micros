@@ -1,0 +1,1 @@
+cmd_/home/users/eng10032_6/p2/p2micros/LEDexample/led/led.ko := i586-poky-linux-ld -r -m elf_i386 -T /home/users/eng10032_6/src/lab11/linux-3.8.7/scripts/module-common.lds --build-id  -o /home/users/eng10032_6/p2/p2micros/LEDexample/led/led.ko /home/users/eng10032_6/p2/p2micros/LEDexample/led/led.o /home/users/eng10032_6/p2/p2micros/LEDexample/led/led.mod.o

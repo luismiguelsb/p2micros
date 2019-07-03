@@ -13,6 +13,7 @@
 static int major=63;
 static int minor=1;
 static struct class *buzzerclass=NULL;
+struct pwm_device* pwm = NULL;
 
 MODULE_AUTHOR("Laurien Santin e Luis Miguel Batista");
 MODULE_DESCRIPTION("buzzer Driver");
@@ -22,7 +23,7 @@ MODULE_LICENSE("GPL");
 module_param(major,int,0);
 MODULE_PARM_DESC(major,"major number; default is kernel allocated.");
 
-static ssize_t buzzer_write(struct pwm_device *file,const char *buf,
+static ssize_t buzzer_write(struct file *file,const char *buf,
 	size_t count,loff_t *ppos)
 {
 	unsigned char data[3];
@@ -34,12 +35,12 @@ static ssize_t buzzer_write(struct pwm_device *file,const char *buf,
 	//A compilação não estava reconhecendo bibliotecas como stdio.h e stdlib.hh, então implementamos um atoi para 3 bytes
 	freq = (data[0] - 48) * 1000 + (data[1] - 48) * 10 + (data[2] - 48);
 	duty_cycle = ((1 / freq) * 1000000000) / 2;
-	pwm_config(file,duty_cycle,freq);
-	pwm_enable(file);
+	pwm_config(pwm,duty_cycle,freq);
+	pwm_enable(pwm);
 	return sizeof(unsigned char);
 }
 
-char* buzzer_read(struct pwm_device *pwm, size_t count)
+static ssize_t buzzer_read(struct file *file, const char *buf, size_t count,loff_t *ppos)
 {
 	int period;
 	char ascii[4];
@@ -49,7 +50,8 @@ char* buzzer_read(struct pwm_device *pwm, size_t count)
 	ascii[1] = period > 1000 ? (period - 1000) / 10 : period / 10;
 	ascii[2] = period % 10;
 	ascii[3] = '\0';
-	return ascii;
+	return copy_to_user(ascii, buf, ARRAY_SIZE(ascii));
+	//return sizeof(ascii);
 }
 
 static struct gpio routers[]={
@@ -58,14 +60,15 @@ static struct gpio routers[]={
 	{68,GPIOF_OUT_INIT_HIGH|GPIOF_EXPORT_DIR_FIXED,"IO6"}
 };
 
-struct pwm_device* buzzer_open()
+static int buzzer_open(struct inode *inode,struct file *file)
 {
-	gpio_request_array(routers, ARRAY_SIZE(routers));
-	return pwm_request(5,"eng10032-buzzer");
+	pwm = pwm_request(5,"eng10032-buzzer");
+	return gpio_request_array(routers, ARRAY_SIZE(routers));
 }
 
 static int buzzer_release(struct pwm_device *pwm)
 {
+	gpio_free_array(routers, ARRAY_SIZE(routers));
 	pwm_free(pwm);
 	return 0;
 }
@@ -74,6 +77,7 @@ static struct file_operations buzzer_fops=
 {
 	.owner=THIS_MODULE,
 	.write=buzzer_write,
+	.read=buzzer_read,
 	.open=buzzer_open,
 	.release=buzzer_release
 };

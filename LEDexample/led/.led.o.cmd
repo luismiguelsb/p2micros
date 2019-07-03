@@ -1,8 +1,8 @@
-cmd_/home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.o := i586-poky-linux-gcc -Wp,-MD,/home/users/eng10032_6/p2/p2micros/P2/buzzer/.buzzer.o.d  -nostdinc -isystem /usr/opt/iss-iot-linux/devkit-x86/sysroots/x86_64-pokysdk-linux/usr/bin/i586-poky-linux/../../lib/i586-poky-linux/gcc/i586-poky-linux/4.9.1/include -I/home/users/eng10032_6/src/lab11/linux-3.8.7/arch/x86/include -Iarch/x86/include/generated  -I/home/users/eng10032_6/src/lab11/linux-3.8.7/include -Iinclude -I/home/users/eng10032_6/src/lab11/linux-3.8.7/arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I/home/users/eng10032_6/src/lab11/linux-3.8.7/include/uapi -Iinclude/generated/uapi -include /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/kconfig.h   -I/home/users/eng10032_6/p2/p2micros/P2/buzzer -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m32 -msoft-float -mregparm=3 -freg-struct-return -fno-pic -mpreferred-stack-boundary=2 -march=i586 -mtune=generic -maccumulate-outgoing-args -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO -D__KERNEL__ -DMODULE  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(buzzer)"  -D"KBUILD_MODNAME=KBUILD_STR(buzzer)" -c -o /home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.o /home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.c
+cmd_/home/users/eng10032_6/p2/p2micros/LEDexample/led/led.o := i586-poky-linux-gcc -Wp,-MD,/home/users/eng10032_6/p2/p2micros/LEDexample/led/.led.o.d  -nostdinc -isystem /usr/opt/iss-iot-linux/devkit-x86/sysroots/x86_64-pokysdk-linux/usr/bin/i586-poky-linux/../../lib/i586-poky-linux/gcc/i586-poky-linux/4.9.1/include -I/home/users/eng10032_6/src/lab11/linux-3.8.7/arch/x86/include -Iarch/x86/include/generated  -I/home/users/eng10032_6/src/lab11/linux-3.8.7/include -Iinclude -I/home/users/eng10032_6/src/lab11/linux-3.8.7/arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I/home/users/eng10032_6/src/lab11/linux-3.8.7/include/uapi -Iinclude/generated/uapi -include /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/kconfig.h   -I/home/users/eng10032_6/p2/p2micros/LEDexample/led -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m32 -msoft-float -mregparm=3 -freg-struct-return -fno-pic -mpreferred-stack-boundary=2 -march=i586 -mtune=generic -maccumulate-outgoing-args -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO -D__KERNEL__ -DMODULE  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(led)"  -D"KBUILD_MODNAME=KBUILD_STR(led)" -c -o /home/users/eng10032_6/p2/p2micros/LEDexample/led/led.o /home/users/eng10032_6/p2/p2micros/LEDexample/led/led.c
 
-source_/home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.o := /home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.c
+source_/home/users/eng10032_6/p2/p2micros/LEDexample/led/led.o := /home/users/eng10032_6/p2/p2micros/LEDexample/led/led.c
 
-deps_/home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.o := \
+deps_/home/users/eng10032_6/p2/p2micros/LEDexample/led/led.o := \
   /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/module.h \
     $(wildcard include/config/sysfs.h) \
     $(wildcard include/config/modules.h) \
@@ -510,11 +510,7 @@ deps_/home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.o := \
     $(wildcard include/config/x86/smap.h) \
   /home/users/eng10032_6/src/lab11/linux-3.8.7/arch/x86/include/asm/uaccess_32.h \
     $(wildcard include/config/debug/strict/user/copy/checks.h) \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/pwm.h \
-    $(wildcard include/config/pwm.h) \
-    $(wildcard include/config/have/pwm.h) \
-    $(wildcard include/config/debug/fs.h) \
 
-/home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.o: $(deps_/home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.o)
+/home/users/eng10032_6/p2/p2micros/LEDexample/led/led.o: $(deps_/home/users/eng10032_6/p2/p2micros/LEDexample/led/led.o)
 
-$(deps_/home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.o):
+$(deps_/home/users/eng10032_6/p2/p2micros/LEDexample/led/led.o):

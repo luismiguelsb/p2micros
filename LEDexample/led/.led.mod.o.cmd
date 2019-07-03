@@ -1,8 +1,9 @@
-cmd_/home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.o := i586-poky-linux-gcc -Wp,-MD,/home/users/eng10032_6/p2/p2micros/P2/buzzer/.buzzer.o.d  -nostdinc -isystem /usr/opt/iss-iot-linux/devkit-x86/sysroots/x86_64-pokysdk-linux/usr/bin/i586-poky-linux/../../lib/i586-poky-linux/gcc/i586-poky-linux/4.9.1/include -I/home/users/eng10032_6/src/lab11/linux-3.8.7/arch/x86/include -Iarch/x86/include/generated  -I/home/users/eng10032_6/src/lab11/linux-3.8.7/include -Iinclude -I/home/users/eng10032_6/src/lab11/linux-3.8.7/arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I/home/users/eng10032_6/src/lab11/linux-3.8.7/include/uapi -Iinclude/generated/uapi -include /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/kconfig.h   -I/home/users/eng10032_6/p2/p2micros/P2/buzzer -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m32 -msoft-float -mregparm=3 -freg-struct-return -fno-pic -mpreferred-stack-boundary=2 -march=i586 -mtune=generic -maccumulate-outgoing-args -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO -D__KERNEL__ -DMODULE  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(buzzer)"  -D"KBUILD_MODNAME=KBUILD_STR(buzzer)" -c -o /home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.o /home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.c
+cmd_/home/users/eng10032_6/p2/p2micros/LEDexample/led/led.mod.o := i586-poky-linux-gcc -Wp,-MD,/home/users/eng10032_6/p2/p2micros/LEDexample/led/.led.mod.o.d  -nostdinc -isystem /usr/opt/iss-iot-linux/devkit-x86/sysroots/x86_64-pokysdk-linux/usr/bin/i586-poky-linux/../../lib/i586-poky-linux/gcc/i586-poky-linux/4.9.1/include -I/home/users/eng10032_6/src/lab11/linux-3.8.7/arch/x86/include -Iarch/x86/include/generated  -I/home/users/eng10032_6/src/lab11/linux-3.8.7/include -Iinclude -I/home/users/eng10032_6/src/lab11/linux-3.8.7/arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I/home/users/eng10032_6/src/lab11/linux-3.8.7/include/uapi -Iinclude/generated/uapi -include /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/kconfig.h   -I/home/users/eng10032_6/p2/p2micros/LEDexample/led -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -O2 -m32 -msoft-float -mregparm=3 -freg-struct-return -fno-pic -mpreferred-stack-boundary=2 -march=i586 -mtune=generic -maccumulate-outgoing-args -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -Wframe-larger-than=2048 -fno-stack-protector -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -pg -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -DCC_HAVE_ASM_GOTO -D__KERNEL__ -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(led.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(led)" -DMODULE  -c -o /home/users/eng10032_6/p2/p2micros/LEDexample/led/led.mod.o /home/users/eng10032_6/p2/p2micros/LEDexample/led/led.mod.c
 
-source_/home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.o := /home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.c
+source_/home/users/eng10032_6/p2/p2micros/LEDexample/led/led.mod.o := /home/users/eng10032_6/p2/p2micros/LEDexample/led/led.mod.c
 
-deps_/home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.o := \
+deps_/home/users/eng10032_6/p2/p2micros/LEDexample/led/led.mod.o := \
+    $(wildcard include/config/module/unload.h) \
   /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/module.h \
     $(wildcard include/config/sysfs.h) \
     $(wildcard include/config/modules.h) \
@@ -15,7 +16,6 @@ deps_/home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.o := \
     $(wildcard include/config/tracing.h) \
     $(wildcard include/config/event/tracing.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
-    $(wildcard include/config/module/unload.h) \
     $(wildcard include/config/constructors.h) \
     $(wildcard include/config/debug/set/module/ronx.h) \
   /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/list.h \
@@ -417,104 +417,9 @@ deps_/home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.o := \
     $(wildcard include/config/have/mod/arch/specific.h) \
     $(wildcard include/config/modules/use/elf/rel.h) \
     $(wildcard include/config/modules/use/elf/rela.h) \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/device.h \
-    $(wildcard include/config/debug/devres.h) \
-    $(wildcard include/config/acpi.h) \
-    $(wildcard include/config/devtmpfs.h) \
-    $(wildcard include/config/sysfs/deprecated.h) \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/ioport.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/klist.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/pm.h \
-    $(wildcard include/config/pm.h) \
-    $(wildcard include/config/pm/runtime.h) \
-    $(wildcard include/config/pm/clk.h) \
-    $(wildcard include/config/pm/generic/domains.h) \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/ratelimit.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/arch/x86/include/asm/device.h \
-    $(wildcard include/config/x86/dev/dma/ops.h) \
-    $(wildcard include/config/intel/iommu.h) \
-    $(wildcard include/config/amd/iommu.h) \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/pm_wakeup.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/fs.h \
-    $(wildcard include/config/fs/posix/acl.h) \
-    $(wildcard include/config/security.h) \
-    $(wildcard include/config/quota.h) \
-    $(wildcard include/config/fsnotify.h) \
-    $(wildcard include/config/ima.h) \
-    $(wildcard include/config/epoll.h) \
-    $(wildcard include/config/debug/writecount.h) \
-    $(wildcard include/config/file/locking.h) \
-    $(wildcard include/config/auditsyscall.h) \
-    $(wildcard include/config/block.h) \
-    $(wildcard include/config/fs/xip.h) \
-    $(wildcard include/config/migration.h) \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/kdev_t.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/uapi/linux/kdev_t.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/dcache.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/rculist.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/rculist_bl.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/list_bl.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/bit_spinlock.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/path.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/radix-tree.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/pid.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/capability.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/uapi/linux/capability.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/semaphore.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/uapi/linux/fiemap.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/shrinker.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/migrate_mode.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/percpu-rwsem.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/blk_types.h \
-    $(wildcard include/config/blk/cgroup.h) \
-    $(wildcard include/config/blk/dev/integrity.h) \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/uapi/linux/fs.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/uapi/linux/limits.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/quota.h \
-    $(wildcard include/config/quota/netlink/interface.h) \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/percpu_counter.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/uapi/linux/dqblk_xfs.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/dqblk_v1.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/dqblk_v2.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/dqblk_qtree.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/projid.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/uapi/linux/quota.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/nfs_fs_i.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/fcntl.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/uapi/linux/fcntl.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/arch/x86/include/uapi/asm/fcntl.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/uapi/asm-generic/fcntl.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/gpio.h \
-    $(wildcard include/config/generic/gpio.h) \
-    $(wildcard include/config/arch/have/custom/gpio/h.h) \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/asm-generic/gpio.h \
-    $(wildcard include/config/gpiolib.h) \
-    $(wildcard include/config/of/gpio.h) \
-    $(wildcard include/config/of.h) \
-    $(wildcard include/config/pinctrl.h) \
-    $(wildcard include/config/gpio/sysfs.h) \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/of.h \
-    $(wildcard include/config/sparc.h) \
-    $(wildcard include/config/of/dynamic.h) \
-    $(wildcard include/config/attach/node.h) \
-    $(wildcard include/config/detach/node.h) \
-    $(wildcard include/config/add/property.h) \
-    $(wildcard include/config/remove/property.h) \
-    $(wildcard include/config/update/property.h) \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/mod_devicetable.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/pinctrl/pinctrl.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/uaccess.h \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/arch/x86/include/asm/uaccess.h \
-    $(wildcard include/config/x86/intel/usercopy.h) \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/arch/x86/include/asm/smap.h \
-    $(wildcard include/config/x86/smap.h) \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/arch/x86/include/asm/uaccess_32.h \
-    $(wildcard include/config/debug/strict/user/copy/checks.h) \
-  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/pwm.h \
-    $(wildcard include/config/pwm.h) \
-    $(wildcard include/config/have/pwm.h) \
-    $(wildcard include/config/debug/fs.h) \
+  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/linux/vermagic.h \
+  /home/users/eng10032_6/src/lab11/linux-3.8.7/include/generated/utsrelease.h \
 
-/home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.o: $(deps_/home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.o)
+/home/users/eng10032_6/p2/p2micros/LEDexample/led/led.mod.o: $(deps_/home/users/eng10032_6/p2/p2micros/LEDexample/led/led.mod.o)
 
-$(deps_/home/users/eng10032_6/p2/p2micros/P2/buzzer/buzzer.o):
+$(deps_/home/users/eng10032_6/p2/p2micros/LEDexample/led/led.mod.o):
